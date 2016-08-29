@@ -42,7 +42,7 @@
 
 (flycheck-define-checker elixir-dogma
   "Defines a checker for elixir with dogma"
-  :command ("mix" "dogma" "--format=flycheck" source-inplace)
+  :command ("dogma" "--format=flycheck" source-inplace)
   :error-patterns
   ((info line-start (file-name) ":" line ":" column ": C: "
          (optional (id (one-or-more (not (any ":")))) ": ") (message) line-end)
