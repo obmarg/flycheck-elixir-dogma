@@ -56,7 +56,7 @@
 
 ;;;###autoload
 (defun flycheck-elixir-dogma-setup ()
-  "Setup Flycheck for Clojure."
+  "Setup Flycheck for Elixir using dogma."
   (add-to-list 'flycheck-checkers 'elixir-dogma))
 
 (provide 'flycheck-elixir-dogma)
